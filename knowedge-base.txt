@@ -1,0 +1,95 @@
+Types of selectors:
+===================
+
+- Universal selector *
+- Tag selector like p, h1 etc
+- Id selector like #some-id
+- Class selector like .animal
+- Attribute selector like [disabled]
+
+
+Selector specificity: ( Most to least)
+======================================
+
+- inline style
+- Id selector
+- class, psudo-calss and attribute selector
+- Tag and psudo-element selector
+- Universal selector
+- Browser Default styles
+- Inherited styles
+
+Combinators:
+============
+
+- Adjecent Sibling +       eg: div + p {}
+- General Sibling ~        eg: div ~ p {}
+- Child >                  eg: div > p {}
+- Descendant <space>       eg: div p {}
+- comma                    eg: div,p {}
+
+The special :not sudo selector:
+===============================
+
+The :not selector selects which is opposite of passed in selector. e.g.
+
+a.active {
+   color: blue;
+}
+
+a:not(.active) {
+   color: grey;
+}
+
+The styles declared will select any anchor tag which has class "active" and will apply blue foreground color. The second style will
+select all anchor tags which do not have "active" class applied and will apply foreground of grey.
+
+Margin Collapsing:
+==================
+
+Margin collapsing is a built-in feature of box model, where when two block type elements are laid back one after another,
+their margins do not add up; instead the margins gets overlapped and the size of the overlapped margin is the lrager size
+of the two margins. If you need to override the default behaviour, margin-top and/or margin-bottom property can be used,
+which will override the default margin collapsing behaviour with the value that has been provided. A special case is for
+an empty element which has no content, no padding and no border. For such an empty element top and bottom margins do not
+add up, instead the margins get collapsed and the max sized margin wins.
+
+Block Level Widht and Height Behaviour:
+=======================================
+
+Block level elements by default have a width of 100% i.e. blobk level elements take full available widht of it's parent container.
+Height of a block level element is calculated dynamically according to the size of content that needs to get displayed. The default
+height of a block level element is the height made available by the parent container and the actual height of an element is the
+height which is needed to display the elements content. So in order to make an element's height larger than it's parent height, one
+needs to change the height of the parent element as well.
+
+For widht and height, setting these property with absolute values will make height and width absolute. The width and height 
+properties are applied to the elemnt only and not to its padding, border and margin. So the total space taken by an element
+is it's own width an height, plus size of it's padding, border and margin. The total calculated size of an element is known as
+the "CONTENT BOX". This behaviour is controlled by the "box-sizing" property.
+
+The "box-sizing" property has important values which bothers the most : "content-box", "border-box". The content-box value
+applies the width and height to the element itself, while the border-box property applies the width and height property to
+the element, padding and the border combined. Thus for "box-sizing" property set to border-box, the actual height of element
+is dynamically calculated to make sure that the total widh and height is eqaul to the sum of the element, it's padding and border.
+
+This "box-sizing" property with value of "border-box" is fairly important and needs to be set as an universal overriding property.
+like : * { box-sizing: border-box }
+
+Also, there is a nifty trick which can center a block element horizontally. Use "margin: auto". The value of "auto"
+will automatically calculate the left and right margin according to the widht and content size of the element and
+will apply margins.
+
+The Postion property:
+=====================
+
+The postion property is one of the many property that is automatically applied to all elemnts if anything position related
+property has not been specified. The following are the important legal values for postion : "static", "fixed", "absolute",
+"sticky". The default value of position is "static" and this value denotes the computed postion value of an element
+in the DOM as it is being laid out.
+
+Any postion related changes to "top", "left", "right" and "bottom" can take effect if value of position property is
+not "static". Similarly, z-index is non functional for any elemts which has got default position "static" property.
+
+Any value other than "static" for the position property takes the element out of the default elemtn layout flow and we can
+position the element to a postion where we want.

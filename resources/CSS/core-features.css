@@ -1,0 +1,29 @@
+.core-features {
+    background-color: #FF2E56;
+    margin-top: 40px;
+}
+
+.core-features__h1 {
+    padding-top: 40px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.feature {
+    display: inline-block;
+    width: 33%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: m;
+}
+
+.feature div {
+    width: 128px;
+    height: 128px;
+    margin: auto;
+    background-color: #FEC9D2;
+    border: 2px solid black;
+    border-radius: 50%;
+}

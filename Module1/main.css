@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif;
+}
+
+body h1 {
+    color:gainsboro;
+    font-family: sans-serif;
+}
+
+code {
+    color: red;
+    font-family: monospace;
+}
+
+.second-li-code {
+    color: green;
+}
+
+li {
+    color: black;
+    background: white;
+}
+
+li + li {
+    color: white;
+    background: black;
+}

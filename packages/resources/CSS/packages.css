@@ -1,0 +1,71 @@
+main {
+    padding-top: 32px;
+}
+
+.background {
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('../images/plans-background.jpg');
+}
+
+.package-section {
+    border: 4px solid #004025;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    width: 70%;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.package-section:hover,:active {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-color: #ff5454;
+}
+
+.package-one {
+    margin-top: 50px;
+}
+
+.plus-plan {
+    background-color: #d2fdd9;
+    display: inline-block;
+}
+
+.free-plan {
+    background-color: #E9FAEC;
+    display: inline-block;
+    margin-left: 25%;
+}
+
+.premium-plan {
+    background-color: #1E4E2A;
+    display: inline-block;
+}
+
+.plan-title {
+    color: #030100;
+    font-weight: bold;
+}
+
+.special-title {
+    color: white;
+}
+
+.plan-breif {
+    color: #858B8C;
+}
+
+.plan-description {
+    border: 1px solid #29442C;
+    background-color: white;
+    color: #526971;
+    padding: 10px;
+    width: 80%;
+}
+
+.to-right {
+    text-align: right;
+}

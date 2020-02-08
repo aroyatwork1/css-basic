@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.main-area {
+    margin-top: 20px;
+    padding-left: 25px;
+    height: 100%;
+}
+
+.main-area p {
+    font-weight: bold;
+}
+
+.first-div-container {
+    display: inline-block;
+    float: left;
+    width: 30%;
+}
+
+.nice-div {
+    border: 3px solid gold;
+    text-align: center;
+    padding: 5px;
+}
+
+.second-div-container {
+    display: inline-block;
+    margin-left: 5px;
+    width: 30%;
+    height: 100%;
+}
+
+.nice-div-full-height {
+    width: 100%;
+    height: 30%;
+    border: 3px solid gold;
+    text-align: center;
+    padding: 5px;
+}
+
+.hover-craft:hover {
+    border: 3px solid black;
+    background-color: gold;
+}
