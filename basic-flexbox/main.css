@@ -43,11 +43,11 @@
   }
   
   .content {
+    display: flex;
+    flex-direction: column;
     background: white;
     height: 75%;
     border-top: 5px solid lightgrey;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     overflow-y: scroll;
   }
@@ -64,11 +64,20 @@
   }
   
   .content__img-text-content > img {
-    display: inline-block;
+    float: left;
     max-width: 50%;
-    right-margin: 5px;
+    margin-right: 15px;
+    max-height: 200px;
   }
   
+  .content__img-text-content > p {
+    float: right;
+    max-width: 50%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+
   .footer {
     height: 15%;
     background: #F0CB45;
