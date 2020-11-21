@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafad2;
+}
+
+.container {
+    margin: 30px auto 30px auto;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    width: 80%;
+    background-color: white;
+    display: flex;
+}
+
+.container__header {
+    font-family: 'Anaheim';
+    align-content: center;
+}
