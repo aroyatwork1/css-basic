@@ -13,28 +13,52 @@
         
         <header class="container__header">
             <h1>Application For Permission To Date My Daughter</h1>
-            <p>
-                Note: Form is to be completed at least days prior to date
-            </p>
         </header>
 
-        <div class="">
-            <fieldset>
-                <legend>Personal Details</legend>
-                Name <input id="" name="" type="text"/>
-                Address <input id="" name="" type="text"/>
-                Email <input id="" name="" type="text"/>
-                Phone number <input id="" name="" type="text"/>
-                IQ <input id="" name="" type="text"/>
+        <div class="section container__note">
+                <b>Note</b>: Form is to be completed at least 20 days prior to date
+        </div>
+
+        <fieldset>
+            <legend>Personal Details</legend>
+            <div class="section__details">
+                <div class="section__details__control">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text"/>
+                </div>
+                <div class="section__details__control">
+                    <label for="address">Address</label>
+                    <input id="address" name="address" type="text"/>
+                </div>
+                <div class="section__details__control">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email"/>
+                </div>
+                <div class="section__details__control">
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" name="phone" type="phone"/>
+                </div>
+                <div class="section__details__control">
+                    <label for="iq">IQ</label>
+                    <input id="iq" name="iq" type="number" min="60" />
+                </div>
+                <div class="section__details__control">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text"/>
+                </div>
+                
                 Gender 
                 Male <input id="" name="gender" type="radio"/>
                 Female <input id="" name="gender" type="radio"/>
                 Other <input id="" name="gender" type="radio"/>
-                Date of proposed outing <input id="" name="" type="radio"/>
-            </fieldset>
-        </div>
+                <div class="section__details__control">
+                    <label for="dod">Name</label>
+                    <input id="dod" name="dod" type="date"/>
+                </div>
+            </div>                
+        </fieldset>
 
-        <div class="">
+        <div class="section">
             <p>Check All that Apply</p>
             <input id="" name="gender" type="checkbox"/> I have tattoos and/or piercings
             <input id="" name="gender" type="checkbox"/> I am more than 2 years older than my daughter
@@ -44,7 +68,7 @@
             <input id="" name="gender" type="checkbox"/> Is the date at a well lit public location
         </div>
 
-        <div class="">
+        <div class="section">
             Political Persuasion
             <select id="dropdown">
                 <option value="left">Left Wing</option>
@@ -64,24 +88,23 @@
         <div class="">
             <fieldset>
                 <legend>Essay Section</legend>
-                In 50 words or more explain why yiu want to date my daughter <textarea id="" name="" class=""></textarea>
-                Please Upload Contact Details For 2 References <textarea id="" name="" class=""></textarea>
-                Upload Police Clearence Certificate, Bank Statement and Medical Certificates here <button>Attach Files</button>
-
-                Address <input id="" name="" type="text"/>
-                Email <input id="" name="" type="text"/>
-                Phone number <input id="" name="" type="text"/>
-                IQ <input id="" name="" type="text"/>
-                Gender 
-                Male <input id="" name="gender" type="radio"/>
-                Female <input id="" name="gender" type="radio"/>
-                Other <input id="" name="gender" type="radio"/>
-                Date of proposed outing <input id="" name="" type="radio"/>
+                <div>
+                    <p>In 50 words or more explain why yiu want to date my daughter</p>
+                    <textarea id="" name="" class="" placeholder="Enter Text Here" rows="5" cols="50"></textarea>
+                </div>
+                <div>
+                    <p>Please Upload Contact Details For 2 References</p>
+                    <textarea id="" name="" class="" placeholder="Enter Text Here" rows="5" cols="50"></textarea>
+                </div>
+                <div>
+                    <p style="display: inline;">Upload Police Clearence Certificate, Bank Statement and Medical Certificates here</p>
+                    <button id="upload" name="upload" class="button">Attach Files</button>
+                </div>
             </fieldset>
         </div>
 
         <footer>
-            <button id="" name="">Send Your Application</button>
+            <button id="submit" name="submit" class="button">Send Your Application</button>
         </footer>
     </main>
 </body>
