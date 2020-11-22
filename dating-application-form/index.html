@@ -1,98 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dating Form</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Anaheim&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-    <main class="container">
-        
-        <header class="container__header">
-            <h1>Application For Permission To Date My Daughter</h1>
-        </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dating Form</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Anaheim&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <main class="container">
+            
+            <header class="container__header">
+                <h1>Application For Permission To Date My Daughter</h1>
+            </header>
 
-        <div class="section container__note">
-                <b>Note</b>: Form is to be completed at least 20 days prior to date
-        </div>
+            <div class="container__note">
+                    <b>Note</b>: Form is to be completed at least 20 days prior to date
+            </div>
 
-        <fieldset>
-            <legend>Personal Details</legend>
-            <div class="section__details">
-                <div class="section__details__control">
-                    <label for="name">Name</label>
-                    <input id="name" name="name" type="text"/>
-                </div>
-                <div class="section__details__control">
-                    <label for="address">Address</label>
-                    <input id="address" name="address" type="text"/>
-                </div>
-                <div class="section__details__control">
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="email"/>
-                </div>
-                <div class="section__details__control">
-                    <label for="phone">Phone Number</label>
-                    <input id="phone" name="phone" type="phone"/>
-                </div>
-                <div class="section__details__control">
-                    <label for="iq">IQ</label>
-                    <input id="iq" name="iq" type="number" min="60" />
-                </div>
-                <div class="section__details__control">
-                    <label for="name">Name</label>
-                    <input id="name" name="name" type="text"/>
-                </div>
-                
-                Gender 
-                Male <input id="" name="gender" type="radio"/>
-                Female <input id="" name="gender" type="radio"/>
-                Other <input id="" name="gender" type="radio"/>
-                <div class="section__details__control">
-                    <label for="dod">Name</label>
-                    <input id="dod" name="dod" type="date"/>
-                </div>
-            </div>                
-        </fieldset>
+            <fieldset>
+                <legend>Personal Details</legend>
+                <div class="section__details">
+                    <div class="section__details__control">
+                        <label for="name" class="label">Name</label>
+                        <input id="name" name="name" type="text" placeholder="Enter full name here" />
+                    </div>
+                    <div class="section__details__control">
+                        <label for="address" class="label">Address</label>
+                        <input id="address" name="address" type="text" placeholder="Enter address here"/>
+                    </div>
+                    <div class="section__details__control">
+                        <label for="email" class="label">Email</label>
+                        <input id="email" name="email" type="email" placeholder="Enter email here"/>
+                    </div>
+                    <div class="section__details__control">
+                        <label for="phone" class="label">Phone Number</label>
+                        <input id="phone" name="phone" type="phone" placeholder="Enter phone here"/>
+                    </div>
+                    <div class="section__details__control">
+                        <label for="iq" class="label">IQ</label>
+                        <input id="iq" name="iq" type="number" min="60" placeholder="Enter IQ here"/>
+                    </div>
+                    <div class="section__details__control">
+                        <label class="label">Gender</label>
+                        <div>
+                            <input id="" name="gender" type="radio"/> Male <br>
+                            <input id="" name="gender" type="radio"/> Female <br>
+                            <input id="" name="gender" type="radio"/> Other <br>
+                        </div>
+                    </div>
+                    <div class="section__details__control">
+                        <label for="dod" class="label">Date of proposed outing</label>
+                        <input id="dod" name="dod" type="date"/>
+                    </div>
+                </div>                
+            </fieldset>
 
-        <div class="section">
-            <p>Check All that Apply</p>
-            <input id="" name="gender" type="checkbox"/> I have tattoos and/or piercings
-            <input id="" name="gender" type="checkbox"/> I am more than 2 years older than my daughter
-            <input id="" name="gender" type="checkbox"/> I own a panel van or V8 ute
-            <input id="" name="gender" type="checkbox"/> I work full-time
-            <input id="" name="gender" type="checkbox"/> My Parents are rich
-            <input id="" name="gender" type="checkbox"/> Is the date at a well lit public location
-        </div>
+            <div class="section" style="margin-top: 15px">
+                <div class="section__details">
+                    <div class="section__details__control">
+                        <label class="label">Check All that Apply</label>
+                        <div>
+                            <input id="" name="gender" type="checkbox"/> I have tattoos and/or piercings <br>
+                            <input id="" name="gender" type="checkbox"/> I am more than 2 years older than my daughter <br>
+                            <input id="" name="gender" type="checkbox"/> I own a panel van or V8 ute <br>
+                            <input id="" name="gender" type="checkbox"/> I work full-time <br>
+                            <input id="" name="gender" type="checkbox"/> My Parents are rich <br>
+                            <input id="" name="gender" type="checkbox"/> Is the date at a well lit public location <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="section">
-            Political Persuasion
-            <select id="dropdown">
-                <option value="left">Left Wing</option>
-                <option value="right">Right Wing</option>
-                <option value="conservative">Conservative</option>
-                <option value="nazi">Nazi</option>
-            </select>
-            Education Level Completed
-            <select id="dropdown2">
-                <option value="University">University</option>
-                <option value="College">College</option>
-                <option value="Secondary">High School</option>  
-                <option value="None">None</option>
-            </select>
-        </div>
+            <div class="section" style="padding: 10px;">
+                <div style="display: inline; margin-right: 10px;">
+                    Political Persuasion
+                    <select id="dropdown" style="width: 200px;">
+                        <option value="left">Left Wing</option>
+                        <option value="right">Right Wing</option>
+                        <option value="conservative">Conservative</option>
+                        <option value="nazi">Nazi</option>
+                    </select>
+                </div>
+                Education Level Completed
+                <select id="dropdown2" style="width: 200px;">
+                    <option value="University">University</option>
+                    <option value="College">College</option>
+                    <option value="Secondary">High School</option>  
+                    <option value="None">None</option>
+                </select>
+            </div>
 
-        <div class="">
             <fieldset>
                 <legend>Essay Section</legend>
-                <div>
-                    <p>In 50 words or more explain why yiu want to date my daughter</p>
+                <div style="margin-bottom: 10px;">
+                    <p>In 50 words or more explain why you want to date my daughter</p>
                     <textarea id="" name="" class="" placeholder="Enter Text Here" rows="5" cols="50"></textarea>
                 </div>
-                <div>
+                <div style="margin-bottom: 10px;">
                     <p>Please Upload Contact Details For 2 References</p>
                     <textarea id="" name="" class="" placeholder="Enter Text Here" rows="5" cols="50"></textarea>
                 </div>
@@ -101,11 +107,10 @@
                     <button id="upload" name="upload" class="button">Attach Files</button>
                 </div>
             </fieldset>
-        </div>
 
-        <footer>
-            <button id="submit" name="submit" class="button">Send Your Application</button>
-        </footer>
-    </main>
-</body>
+            <footer class="submit">
+                <button id="submit" name="submit" class="button">Send Your Application</button>
+            </footer>
+        </main>
+    </body>
 </html>
