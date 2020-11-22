@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background-color: #a9d7e9;
+}
+
+header {
+	text-align: center;
+	font-weight: bolder;
+	font-size: 48px;
+	margin-top: 15px;
+}
+
+main {
+	margin: 15px auto 30px auto;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    width: 80%;
+    padding: 25px;
+    background-color: #f3f3f3;
+}
+
+.main__heading {
+	font-size: 22px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-control {
+	margin: auto;
+}
+
+.label {
+	display: inline-block;
+	width: 240px;
+	text-align: right;
+}
+
+.input-fields {
+	height: 35px;
+	width: 280px;
+	padding: 5px;
+	margin: 10px;
+	border: 1px solid #c0c0c0;
+	border-radius: 4px;
+}
+
+.input-radio {
+	height: 35px;
+	width: 280px;
+	padding: 5px;
+	margin: 10px;
+}
+
+.radio {
+	margin-bottom: 10px;
+}
+
+.button {
+	font-size: 1em;
+	background-color: #6ba2ce;
+	color: white;
+	border: 0px solid;
+	border-radius: 4px;
+	height: 40px;
+	width: 80px;
+	margin: 10px;
+}
+
+.align-middle {
+	align-self: center;
+}
