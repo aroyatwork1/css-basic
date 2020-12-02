@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>What is your goal</title>
+		<link rel="stylesheet" type="text/css" href="./main.css"/>
+		<script src="http://unpkg.com/vue@next"></script>
+	</head>
+	<body>
+		<main id="app">
+			<div class="container">
+				<p>Goal</p>
+				<input type="text" name="goal" placeholder="Enter your goal here" v-model="enteredGoal"/>
+				<button v-on:click="addGoal()">Add Goal</button>
+				<div class="goals">
+					<ul>
+						<li v-for="goal in goals">{{ goal }}</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<script src="main.js"></script>
+	</body>	
+</html>
