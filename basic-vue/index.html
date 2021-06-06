@@ -11,6 +11,7 @@
 				<p>Goal</p>
 				<input type="text" name="goal" placeholder="Enter your goal here" v-model="enteredGoal"/>
 				<button v-on:click="addGoal()">Add Goal</button>
+				<button v-on:click="clearGoal()" :disabled="!goals.length">Clear</button>
 				<div class="goals">
 					<ul>
 						<li v-for="goal in goals">{{ goal }}</li>
