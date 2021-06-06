@@ -14,6 +14,9 @@ Vue.createApp({
 		},
 		clearGoal() {
 			this.goals = [];
+			if (!this.enteredGoal) return;
+			this.goals.push(this.enteredGoal);
+			this.enteredGoal = '';
 		}
 	}
 }).mount("#app");
